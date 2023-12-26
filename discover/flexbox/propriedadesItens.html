@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*flex-basis para definir tamanho dos elementos na direção do eixo
+        .container{
+            display: flex;
+            margin-top: 20px;
+            border: 1px dashed red;;
+        }
+        .container div{
+            border: 1px solid;
+            flex-basis: 25%;
+        }*/
+
+
+        /*flex-grow preenche os espaços vazios da caixa, flex-grow: 1; para que todos os elementos tenham o mesmo espaço
+        .container{
+            display: flex;
+            margin-top: 20px;
+            border: 1px dashed red;
+            
+        }
+        .container div{
+            border: 1px solid;
+            flex-grow: 1;
+        }
+        .container div:nth-child(3){
+            flex-grow: 2;
+        }*/
+
+
+        /*flex-shrink encolhe o item dentro do container
+        .container{
+            display: flex;
+            margin-top: 20px;
+            border: 1px dashed red;
+            width: 160px;
+            font-size: larger;
+            
+        }
+        .container div{
+            border: 1px solid;
+            flex-basis: 40px;
+        }   
+        .container div:nth-child(2),
+        .container div:nth-child(3){
+            flex-shrink: 2;
+        }*/
+
+
+        /*flex, atalho para flex-grow, flex- shrink, flex-basis basis é mais forte do que todos os outros
+        pode tem 1, 2 ou 3 valores
+        .container{
+            display: flex;
+            border: 1px dashed red;
+            margin-top: 20px;
+
+        }
+        .container div{
+            border: 1px solid;
+            flex: 1 0 40px;
+        } */
+
+
+        /*order*/
+        .container{
+            display: flex;
+            border: 1px dashed red;
+            margin-top: 20px;
+
+        }
+        .container div{
+            border: 1px solid;
+        } 
+        .container div:nth-child(1){
+            order: 1;
+        }
+        .container div:nth-child(2){
+            order: 100;
+        }
+        .container div:nth-child(3){
+            order: 20;
+        }
+        .container div:nth-child(4){
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+</body>
+</html>

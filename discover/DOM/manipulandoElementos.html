@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+    </header>
+
+    <script>
+        const header = document.querySelector("header")
+        header.setAttribute('id', 'header')    
+        const headerID = document.querySelector('#header')
+
+        console.log(headerID.getAttribute('id'))
+
+        header.removeAttribute('id')
+    </script>
+</body>
+</html>

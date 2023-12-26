@@ -1,0 +1,34 @@
+<!--
+    <input type="email">
+
+    #Atributos
+    -Placeholder
+    -readonly
+    -value
+
+    -required
+
+    -multiple
+        *o campo irá receber 1 ou mais emails, separados por ,
+
+    -minlength/ maxlength
+
+    -size
+
+    -pattern
+        * Uso de expressão regular para validar o campo
+        *pattern=.+@gmail\.com  \ para aceitar o ponto como ponto literal, (ponto inicial para aceitar qualquer caracter), (+ para indicar que o caracter pode ser escrita uma ou mais vezes)
+
+
+-->
+<form action="">
+    <datalist id="emailslist">
+        <option>pedro@gmail.com</option>
+    </datalist>
+    <input type="email"
+    pattern=".+@gmail\.com"
+    title="Somente emails @gmail.com serão aceitos"
+    list="emailslist"
+    >
+    <button type="submit">enviar</button>
+</form>

@@ -1,0 +1,25 @@
+git add para preparar para o envio
+
+git commit -m "" para adicionar a mensagem para o commit
+
+git log para ver onde está no projeto(--grep,--since,--author)
+
+git rm --cached nome do arquivo(após o git add, caso queira remover algum arquivo)
+
+git mv (renomeia o arquivo)
+
+mkdir folder(cria uma nova pasta chamada folder)
+
+git mv README.md sub/README.md(coloca o arquivo na pasta sub)
+
+git restore nome_do_arquivo(desfazer mudanças)
+
+git restore --staged arquivo(caso queira tirar do stage area)
+
+git checkout  nome_do_commit(git log) -- README.md (recupera um arquivo)
+
+git revert HEAD~5(volta para o quinto ultimo commit)
+
+git show numero_do_commit(mostrar as alteracoes do commit)
+
+git touch nome_arquivo(criar arquivo)

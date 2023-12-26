@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            color: red;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+    </header>
+
+    <script>
+        const el = document.querySelector("body")
+
+        el.classList.add('active', 'green')
+
+        console.log(el.classList)
+
+        el.classList.remove('active')
+
+        el.classList.toggle('active')//vê se tem, se sim ele remove, se não ele coloca
+    </script>
+</body>
+</html>

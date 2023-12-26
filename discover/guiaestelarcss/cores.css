@@ -1,0 +1,13 @@
+div{
+    color: hsl(30, 100%, 50%, 0.8)
+}
+/*h1{
+    color: currentColor; (mesma coisa de não colocar nada "cor atual")
+}*/
+h1{
+    color: #090;
+}
+p{
+    color: unset;
+}
+

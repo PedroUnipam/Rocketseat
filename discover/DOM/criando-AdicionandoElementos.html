@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+    </header>
+
+    <script>
+        const div = document.createElement("div")
+        div.innerText = "Olá Devs!!"
+
+        const body = document.querySelector("body")
+
+        const p = document.createElement('p')
+        p.innerText = "Insert Before"
+
+        body.append(div)//para colocar a div no final
+        //body.prepend para colocar a div no inicio
+        
+        const script = document.querySelector('body script')
+
+        body.insertBefore(p, script)
+    </script>
+
+</body>
+</html>

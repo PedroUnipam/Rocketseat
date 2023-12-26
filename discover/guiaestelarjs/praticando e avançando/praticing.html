@@ -1,0 +1,70 @@
+<script>
+//1. Declare uma variável de nome weight.
+//var weight
+
+//2. Que tipo de dado é a variável acima?
+//console.log(typeof weight)
+
+/*
+    3.Declare uma variável e atribua valores para cada um dos dados:
+    * name: string
+    * age : numer(integer)
+    * stars : number(float)
+    * isSubscribed : boolean
+*/
+
+//let name= 'Pedro'
+//let age= 18
+//let stars= 4.8
+//let isSubscribed= false
+
+/* 
+    4. A variável student abaixo é de que tipo de dados?
+    4.1 Atribua a ela as mesmas propriedades e valores do exercício 3.
+    4.2 Mostre no console a seguinte mensagem:
+    <name> de idade <age> pesa <weight> kg.
+*/
+let student = {
+    name: 'Pedro',
+    age: 18,
+    weight: 50.5,
+    isSubscribed: true,
+}//object
+//console.log(`${student.name} de idade ${student.age} pesa ${student.weight} kilos`)
+
+/*
+5. Declare uma variável do tipo array, de nome students e atribua a ela nenhum valor, ou seja, somente o array vazio
+*/
+let students = []
+
+/*
+6.Reatrivua valor para a variável acima, colocando dentro dela o objeto student da questão 4
+*/
+students = [
+  student,
+]
+//console.log(students)
+/*
+7.Coloque no console o valor da posição 0 do array acima
+*/
+//console.log(students[0])
+/*
+8. Crie um novo student e ccoloque na posição 1 do array students
+*/
+const student2={
+    name: 'Zé',
+    age: 25,
+    weight: 54.6,
+    isSubscribed: false
+}
+students[1] = student2
+//console.log(students)
+/*
+9. Sem rodar o codigo, responda qual é a resposta do codigo abaixo e por que. Após sua resposta, rode o código e veja se acertou.
+console.log(a)
+var a = 1
+*/
+//Resposta = undefined, pois vai ocorrer hoisting
+console.log(a)
+var a = 1
+</script>
