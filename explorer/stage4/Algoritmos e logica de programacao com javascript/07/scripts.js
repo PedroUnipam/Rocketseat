@@ -40,7 +40,9 @@ while(option != 3){
             break;
         case 3: 
             alert("Tchau")
+            break;
         default:
+            alert("Opção inválida. Tente novamente")
             break;
     }
 }
