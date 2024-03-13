@@ -30,10 +30,9 @@ typeof variable == typeof number ? alert("é número") : alert("Não é número"
 
 4-Crie um script que declare uma variável e verifique se o seu valor é uma string. Se for, exiba a mensagem "É uma string", caso contrário, exiba a mensagem "Não é uma string".
 
-let isString = typeof "Pedro"
-let teacherName = "Mayk"
+let isString = "Pedro"
 
-if(typeof teacherName == isString){
+if(typeof isString == "string"){
     alert("É string")
 }else{
     alert("Não é string")
@@ -90,3 +89,6 @@ const isOdd = 9
 isOdd % 2 == 1 ? alert("É ímpar") : alert("Nao é ímpar")
 
 */
+
+
+
